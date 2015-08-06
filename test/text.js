@@ -3,17 +3,7 @@ var http = require('http')
 
 http.createServer(function(req, res) {
 
-  var ringStream = file.createReadStream(__dirname + '/data/oneRing.txt');
-  var ozStream =  file.createReadStream(__dirname + '/data/Ozymandias.txt');
-
-  ringStream.pipe(res);
-  ozStream.pipe(res);
-
-  ringStream.on('error', function(err) {
-    res.end(err);
-  });
-  ozStream.on('error', function(err) {
-    res.end(err);
-  });
+  file.createReadStream(__dirname + '/data/oneRing.txt').pipe(res);
+  file.createReadStream(__dirname + '/data/Ozymandias.txt').pipe(res);
 
 }).listen(8080);
