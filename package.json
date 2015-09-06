@@ -1,0 +1,36 @@
+{
+  "name": "streamix",
+  "version": "0.1.0",
+  "description": "A library for Streaming &amp; mixing of data over mutiple protocols.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/applait/streamix"
+  },
+  "keywords": [
+    "rtp",
+    "libav",
+    "ffmpeg",
+    "mix",
+    "mux",
+    "media",
+    "audio",
+    "video",
+    "data",
+    "stream"
+  ],
+  "author": {
+    "name": "Applait Technologies LLP",
+    "email": "ask@applait.com",
+    "url": "http://applait.com"
+  },
+  "license": "Mozilla Public License 2.0",
+  "bugs": {
+    "url": "https://github.com/applait/streamix/issues"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "avconv": "~3.0.0"
+  }
+}
